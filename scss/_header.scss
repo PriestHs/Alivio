@@ -1,0 +1,129 @@
+.header {
+    padding: 17px 0 20px;
+
+    border-bottom: 1px solid #D6D6D6;
+}
+.header__row {
+    display: flex;
+    align-items: center;
+}
+.header__nav {
+    margin-left: 170px;
+
+    font-weight: 500;
+    color: #292929;
+
+    ul {
+        display: flex;
+    }
+    li {
+        margin-right: 70px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    a {
+        position: relative;
+
+        transition: color 0.2s linear;
+        span {
+            display: none;
+            position: absolute;
+            top: 25px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            padding: 5px;
+
+            text-align: center;
+            color: rgba(51, 51, 51, 0.727);
+            font-size: 14px;
+            background-color: rgba(14, 14, 14, 0.051);
+            border-radius: 10px;
+    
+            pointer-events: none;
+        }
+    }
+    a:hover {
+        color: #01996D;
+    }
+}
+.header__login {
+    margin-left: auto;
+    margin-bottom: -3px;
+
+    a {
+        color: #000;
+
+        transition: color 0.2s linear;
+        &:hover {
+            color: #01996D;
+        }
+    }
+    & > * + * {
+        margin-left: 35px;
+    }
+}
+.btn, a.btn {
+    height: 65px;
+    padding: 0 50px;
+
+    line-height: 65px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+
+    border-radius: 4px ;
+    background-color: #01996D;
+
+    transition: opacity 0.2s linear;
+    &:hover {
+        color: #fff;
+
+        opacity: 0.8;
+    }
+}
+
+a.btn-small {
+    height: 51px;
+
+    line-height: 51px;
+}
+// Адаптив
+
+@media (max-width: 1199px) {
+    .header__row {
+        justify-content: space-between;
+    }
+
+    .header__nav {
+        margin-left: 50px;
+
+        li {
+            margin-right: 50px;
+        }
+    }
+
+    .header__login {
+        margin-left: 30px;
+    }
+}
+@media (max-width: 991px) {
+    .header__nav {
+        display: none;
+    }
+
+    .header__login {
+        display: none;
+    }
+
+    .btn, a.btn {
+        height: 55px;
+        line-height: 55px;
+    }
+
+    a.btn-small {
+        height: 41px;
+        line-height: 41px;
+    }
+}

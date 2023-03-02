@@ -1,0 +1,89 @@
+.home {
+    min-height: 895px;
+    padding: 175px 0;
+    position: relative;
+}
+.home__content {
+    max-width: 440px;
+}
+.home__heading {
+    margin-bottom: 30px;
+
+    font-family: 'Georgia', serif;
+    color: #01996D;
+    font-weight: 700;
+    font-size: 65px;
+}
+.home__text {
+    max-width: 430px;
+    margin-bottom: 50px;
+
+    color:#484848;
+    line-height: 144.5%;
+}
+.home__btn {
+    position: relative; 
+    span {
+        display: none;
+        position: absolute;
+        bottom: -75px;
+        left: 25%;
+        transform: translateX(-50%);
+        padding: 20px 65px 20px 10px;    
+
+        color: #01996e84;
+        line-height: normal;
+
+        border-radius: 10px;    
+        background-color: rgba(51, 51, 51, 0.251);
+
+        pointer-events: none;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-image: url(../img/modals/cat-detective.png);
+            background-size:contain;
+        }
+    }
+}
+.home__bg-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    z-index: -1;
+
+    img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 991px) {
+    .home {
+        padding: 40px 0;
+        min-height: unset;
+    }
+
+    .home__heading {
+        font-size: 45px;
+        line-height: 1.2;
+    }
+
+    .home__text {
+        margin-bottom: 30px;
+    }
+
+    .home__bg-img img {
+        opacity: 0.6;
+    }
+}

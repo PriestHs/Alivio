@@ -1,0 +1,122 @@
+.how-it-works {
+    padding: 169px 0 51px 0;
+}
+.how-it-works__header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 52px;
+}
+.how-it-works__header-head {
+    max-width: 584px;
+    margin-right: 30px;
+}
+.how-it-works__title {
+    margin-bottom: -3px;
+
+    line-height: 157%;
+    font-size: 24px;
+    font-weight: 600;
+}
+.how-it-works__subtitle {
+    font-family: 'Georgia', serif;
+    color: #01996D;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 157%;
+}
+.how-it-works__header-content {
+    max-width: 671px;
+    padding-top: 58px;
+
+    line-height: 150%;
+    font-weight: 500;
+}
+// Steps
+.how-it-works__steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 390px);
+    column-gap: 95px;
+}
+.step {
+    max-width: 390px;
+
+    &:nth-child(2) {
+        padding-top: 287px;
+    }
+    &:nth-child(3) {
+        padding-top: 54px;
+    }
+}
+.step__heading {
+    position: relative;
+    margin-bottom: 55px;
+    padding: 135px 0 0 88px;
+
+    font-family: 'Georgia', serif;
+    color: #000;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 150%;
+
+    &::before {
+        content: attr(data-number);
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        color: rgba(1, 153, 109, 0.2);
+        font-weight: 400;
+        font-size: 150px;
+        line-height: 150%;
+    }
+}
+.step__text {
+    margin-bottom: 60px;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+}
+.step__img {
+    width: 100%;
+    height: auto;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+}
+
+@media (max-width: 1399px) {
+    .how-it-works {
+        padding: 60px 0 30px;
+    }
+
+    .how-it-works__header {
+        padding-bottom: 52px;
+        flex-direction: column;
+    }
+
+    .how-it-works__subtitle {
+        line-height: 130%;
+        font-size: 40px;
+    }
+
+    .how-it-works__header-content {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 1389px) {
+    .step {
+        &:nth-child(2), &:nth-child(3) {
+            padding-top: 0;
+        }
+    }
+}
+
+@media (max-width: 419px) {
+    .how-it-works__steps {
+        grid-template-columns: 1fr;
+    }
+}

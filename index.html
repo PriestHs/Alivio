@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/favicon/favicon.png" type="image/png">
+    <link rel="stylesheet" href="./fonts/Georgia/stylesheet.css">
+    <link rel="stylesheet" href="./fonts/Lato/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link rel="stylesheet" href="./scc/main.css">
+    <title>Alivia</title>
+</head>
+<body>
+    
+<header class="header">
+    <div class="container">
+        <div class="header__row">
+
+            <div class="header__logo"><img src="./img/header/logo.svg" alt="Logo"></div> 
+
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="#">Why Alivio<span>Пусто</span></a></li>
+                    <li><a href="#">Solutions<span>Пусто</span></a></li>
+                    <li><a href="#">Community<span>Пусто</span></a></li>
+                    <li><a href="#">Pricing<span>Пусто</span></a></li>
+                </ul>
+            </nav>
+
+            <div class="header__login">
+                <a class="popup-1__open-btn-2" href="#!">Sign in</a>
+                <a class="btn btn-small popup-1__open-btn" href="#!">Start Trial</a>
+            </div> 
+            
+            <button type="button" class="mobile-nav-button">
+                <span class="mobile-nav-button__icon"></span>
+            </button>
+
+        </div>
+    </div>
+</header>
+
+<div class="mobile-nav">
+                
+    <img class="mobile-nav__logo" src="./img/mobile/m-logo.svg" alt="LOGO">
+
+    <nav class="mobile-nav__list">
+        <ul>
+            <li><a href="#">Why Alivio</a></li>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Pricing</a></li>
+        </ul>
+    </nav>
+
+    <div class="mobile-nav__login">
+        <a href="#!">Sign in</a>
+        <a class="btn" href="#!">Start Trial</a>
+    </div>
+
+</div>
+
+
+<main class="">
+<section class="home">
+        <div class="container">
+            <div class="home__content">
+                <h1 class="home__heading">Be aware, Manage well.</h1>
+                <div class="home__text">
+                    <p>Everyone experiences stress in different ways.
+                    Let Alivio guide you, in a personalized journal experience, to overcome your stress.</p>
+                </div>
+                <div class="home__btn">
+                    <a class="btn" href="#!">Find Your Way</a>
+                    <span>Ищем путь</span>
+                </div>
+            </div>
+        </div>
+        <div class="home__bg-img">
+            <img src="./img/home/bg.jpg" alt="Background cover">
+        </div>
+</section>
+
+
+<section class="how-it-works">
+        <div class="container">
+
+            <div class="how-it-works__header">
+                <div class="how-it-works__header-head">
+                    <h2 class="how-it-works__title">How it works</h2>
+                    <h3 class="how-it-works__subtitle">Understand & Release the stress in 3 steps</h3>
+                </div>
+
+                <div class="how-it-works__header-content">
+                    <p>Alivio offers as many journals it takes, tackling different areas such as anxiety, overwhelmedness, sadness, or anger, and a variety of personal causes, to help you become aware of your emotions, and guide you in how to manage stress.</p>
+                </div>
+            </div>
+
+            <div class="how-it-works__steps">
+                <div class="step">
+
+                    <h4 class="step__heading" data-number="01">Personalize</h4>
+
+                    <div class="step__text">
+                        <p>Answer a quick survey about how you express yourself, what causes you stress, and what area would you like to work on. This way, we can fully personalize your journal!</p>
+                    </div>
+
+                    <img class="step__img" src="./img/how-it-works/step-01.jpg" alt="Step 1">
+
+                </div>
+
+                <div class="step">
+
+                    <h4 class="step__heading" data-number="02">Write & Understand</h4>
+
+                    <div class="step__text">
+                        <p>Write, draw, reflect, understand. Alivio will guide you through the prompts and will help you manage your stress!!</p>
+                    </div>
+
+                    <img class="step__img" src="./img/how-it-works/step-02.jpg" alt="Step 1">
+
+                </div>
+
+                <div class="step">
+
+                    <h4 class="step__heading" data-number="03">Alivio!</h4>
+
+                    <div class="step__text">
+                        <p>Now you are aware, and have a way to manage and overcome your own stress.
+                            What are you waiting for? Alivio today!</p>
+                    </div>
+
+                    <img class="step__img" src="./img/how-it-works/step-03.jpg" alt="Step 1">
+
+                </div>
+            </div>
+
+        </div>
+</section>
+
+
+<section class="story">
+        <div class="container container-wide">
+            <div class="story__row">
+
+                <div class="story__content">
+                    <h3 class="story__heading">Let's hear about Kayla's success story</h3>
+
+                    <div class="story__text">See how well Alivio works in a real customer’s life.</div>
+
+                    <div class="story__btn"><a class="btn" href="#ex1" rel="modal:open">Let’s get started</a></div>
+                </div>
+
+                <div class="story__video">
+
+                    <div id="videon-story-overlay" class="story__video-overlay">
+                        <button id="video-story-btn" class="story__video-btn">
+                            <img id="video-story-btn-icon" width="82" height="82" src="./img/story/play-white.svg" alt="Play">
+                        </button>
+                    </div>
+
+                    <video id="video-story" class="story__video-object">
+                        <source src="./video/customer-story.mp4" type="video/mp4">
+                    </video>
+
+                </div>
+
+            </div>
+        </div>
+</section>
+
+
+<section class="product">
+        <div class="container">
+            <div class="product-row">
+
+                <div class="product__img-wrapper">
+                    <img src="./img/product/photo.jpg" alt="Photo" class="product__img">
+
+                    <div class="product__card">
+                        <div class="card">
+                            <h3 class="card__title">Customized For</h3>
+
+                            <div class="card__avatar">
+                                <div class="avatar">
+                                    <img class="avatar-img" src="./img/product/avatar.jpg" alt="avatar">
+                                    <h4 class="avatar__name">Mikayla</h4>
+                                </div>
+                            </div>
+
+                            <div class="card__contents">
+                                <h3 class="card__contents-title">Your custom contents</h3>
+                                <ul>
+                                    <li>Understand Your Stress</li>
+                                    <li>Anger Management</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="product__content">
+                    <h2 class="product__content__title">Our product</h2>
+                    <h3 class="product__content__subtitle">You tell us your stress,
+                    We make your diary</h3>
+                    <div class="product__content__text">Everyone experiences it, and in different ways.
+                        <span>Let Alivio guide you, in a personalized journal experience, to overcome your stress.</span></div>
+                        <div class="product__content__btn">
+                            <a href="#!" class="btn">Find Your Way</a>
+                        </div>
+                </div>
+
+            </div>
+        </div>
+</section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__content">
+
+            <img class="footer_logo" src="./img/footer/logo.svg" alt="Logo">
+
+            <nav class="footer__nav">
+                <ul>
+                    <li><a href="#!">Why Alivio</a></li>
+                    <li><a href="#!">Solutions</a></li>
+                    <li><a href="#!">Community</a></li>
+                    <li><a href="#!">Pricing</a></li>    
+                </ul>
+            </nav>
+ 
+        </div>
+    </div>
+</footer>
+
+<div class="popup-1">
+    <div class="popup-1__overlay">
+        <div class="popup-1__body">
+            <button class="popup-1__close-btn"></button>
+            <h3 class="popup-1__title">Модальное окно без дизайна</h3>
+            <div class="popup-1__img">
+                <img src="./img/modals/cat-img.jpg" alt="Киски">    
+            </div>
+            <button class="popup-1__img-btn">Нужно кликнуть</button>
+        </div>
+    </div>
+</div>
+
+<div id="ex1"  class="popup-2 modal">
+        <div class="popup-2__body">
+            <a href="#" rel="modal:close" class="popup-2__close-btn"></a>
+            <h3 class="popup-2__title">Еще одно модальное окно</h3>
+            <div class="popup-2__img">
+                <img src="./img/modals/cat-2-img.jpg" alt="Киски">    
+            </div>
+            <button class="popup-2__img-btn">Тоже кликнуть</button>
+        </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<script src="./js/main.js"></script>
+
+</body>
+</html>
